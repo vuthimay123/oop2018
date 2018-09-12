@@ -1,6 +1,7 @@
 package week1;
 
 public class Student {
+    String name ,email,id,group;
 
     // TODO: khai báo các thuộc tính cho Student
 
