@@ -1,7 +1,43 @@
 package week1;
 
 public class Student {
-    String name ,email,id,group;
+
+    private String name;
+    private String email;
+    private String id;
+    private String group;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getGroup() {
+        return group;
+    }
+
+    public void setGroup(String group) {
+        this.group = group;
+    }
 
     // TODO: khai báo các thuộc tính cho Student
 
@@ -12,6 +48,10 @@ public class Student {
      */
     Student() {
         // TODO:
+        this.name=name;
+        this.id=id;
+        this.email=email;
+        this.group=group;
     }
 
     /**
@@ -22,6 +62,9 @@ public class Student {
      */
     Student(String n, String sid, String em) {
         // TODO:
+        this.name=n;
+        this.id=sid;
+        this.email=em;
     }
 
     /**
@@ -30,10 +73,19 @@ public class Student {
      */
     Student(Student s) {
         // TODO:
+        this.name=s.name;
+        this.id=s.id;
+        this.group=s.group;
+        this.email=s.email;
     }
 
-    String getInfo() {
+    void  getInfo() {
         // TODO:
-        return null; // xóa dòng này sau khi cài đặt
+        System.out.println(getName());
+        System.out.println(getEmail());
+        System.out.println(getId());
+        System.out.println(getGroup());
+
+        //return null; // xóa dòng này sau khi cài đặt
     }
 }
