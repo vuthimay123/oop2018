@@ -38,11 +38,11 @@ public class Task1 {
         System.out.println("nhap so thu hai ");
         b=input.nextInt();
         int ucln=gcd(a,b);
-        System.out.println(ucln);
-        System.out.println("ket qua cua day fibonaccil");
+        System.out.println("uoc chung lon nhat cua hai so do la "+ucln);
+        System.out.println("nhap so fibonacci can tim " );
         int n=input.nextInt();
 
-        System.out.println(fibonacci(n));
+        System.out.println("so fibonacci thu"+n+" = "+fibonacci(n));
 
 
     }

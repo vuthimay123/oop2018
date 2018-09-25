@@ -1,19 +1,34 @@
 package week2.task2;
 
-import sun.net.ftp.FtpClient;
+//import sun.net.ftp.FtpClient;
 
 public class Fraction {
 
     // TODO: khai báo các thuộc tính
     private int numerator, denominator;
 
+    public int getNumerator() {
+        return numerator;
+    }
 
+    public void setNumerator(int numerator) {
+        this.numerator = numerator;
+    }
+
+    public int getDenominator() {
+        return denominator;
+    }
+
+    public void setDenominator(int denominator) {
+        this.denominator = denominator;
+    }
+// ham khoi tao co tham so
     public Fraction(int numerator, int denominator) {
         // TODO: khởi tạo giá trị cho các thuộc tính numberator (tử số), denominator (mẫu số)
         this.numerator = numerator;
         this.denominator = denominator;
     }
-
+//phuong thuc tinh tong hai phan so tra ve ket qua la mot phan so
     public Fraction add(Fraction other) {
         // TODO: Ph&#x1b0;&#x1a1;ng th&#x1ee9;c c&#x1ed9;ng hai ph&acirc;n s&#x1ed1; (this v&agrave; other), tr&#x1ea3; v&#x1ec1; &#x111;&#x1ed1;i t&#x1b0;&#x1ee3;ng Fraction m&#x1edb;i
         Fraction sum1 = new Fraction(0, 0);
@@ -23,7 +38,7 @@ public class Fraction {
 
         return sum1;
     }
-
+//phuong  tinh hieu hai phan so va tra ve kat qua la mot phan so
     public Fraction subtract(Fraction other) {
         // TODO: Phương thức trừ hai phân số (this và other), trả về đối tượng Fraction mới
         Fraction hieu = new Fraction(0, 0);
@@ -33,7 +48,7 @@ public class Fraction {
 
         return hieu;
     }
-
+//phuong thuc tinh tich hai phan so tra ve la mot phan so
     public Fraction multiply(Fraction other) {
         // TODO: Phương thức nhân hai phân số (this và other), trả về đối tượng Fraction mới
         Fraction tich = new Fraction(0, 0);
@@ -42,7 +57,7 @@ public class Fraction {
 
         return tich;
     }
-
+//phuong thuc chia hai phan so tra ve ket qua  la mot phan so
     public Fraction divide(Fraction other) {
         // TODO: Phương thức chia hai phân số (this và other), trả về đối tượng Fraction mới
         Fraction thuong = new Fraction(0, 0);
@@ -51,7 +66,7 @@ public class Fraction {
 
         return thuong;
     }
-
+//phuong thuc so sanh hai phan so xem co bang nhau hay khong
     public boolean equals(Fraction other) {
         return (this.numerator * other.denominator) == (this.denominator * other.numerator);
     }
