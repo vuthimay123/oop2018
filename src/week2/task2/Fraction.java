@@ -67,8 +67,24 @@ public class Fraction {
         return thuong;
     }
 //phuong thuc so sanh hai phan so xem co bang nhau hay khong
-    public boolean equals(Fraction other) {
-        return (this.numerator * other.denominator) == (this.denominator * other.numerator);
+    public boolean equals(Object obj) {
+        Fraction fraction = (Fraction) obj;
+        return (this.numerator * fraction.denominator) == (this.denominator * fraction.numerator);
     }
+
+    public static void main(String[] args) {
+        Fraction ps1 = new Fraction(1,2);
+        Fraction ps2 = new Fraction(3,4);
+        Fraction p1 = ps1.add(ps2);
+        System.out.println(p1.numerator+"/"+p1.denominator);
+        Fraction p2=ps1.subtract(ps2);
+        System.out.println(p2.numerator+"/"+p2.denominator);
+        Fraction p3=ps1.multiply(ps2);
+        System.out.println(p3.numerator+"/"+p3.denominator);
+        Fraction p4=ps1.divide(ps2);
+        System.out.println(p4.numerator+"/"+p4.denominator);
+        System.out.println(ps1.equals(ps2));
+    }
+
 }
 //may

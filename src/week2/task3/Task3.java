@@ -3,7 +3,7 @@ package week2.task3;
 public class Task3 {
 }
 //class bieu dien doi tuong hoc sinh
-    public class student{
+    class student{
     private String lop;
     private String name;
     private int diemtb;
@@ -35,7 +35,7 @@ public class Task3 {
     //diem co bang nhau  khong
     public boolean sosanh(student other)
     {
-        return (this.diemtb.equals(other.diemtb));
+        return (this.diemtb==(other.diemtb));
     }
     //xep hang sinh vien
     public void xeploai()
@@ -58,7 +58,7 @@ public class Task3 {
 }
 
 // lop bieu dien do tuong con heo
-    public class conheo{
+    class conheo{
     private String color;
     private float weight;
     private int age;
@@ -98,14 +98,14 @@ public class Task3 {
 
     }
     //so sanh can nang cua hai con heo
-    public boolen compare(conheo a)
+    boolean compare(conheo a)
     {
-        return (this.weight.equals(other.weight));
+        return (this.weight==(a.weight));
     }
 
 }
 //class bieu dien doi tuong lop hoc
-    public class classroom{
+    class classroom{
     private int student ;
     private String name;
     private int table ;

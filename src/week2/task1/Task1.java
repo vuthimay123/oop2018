@@ -21,6 +21,10 @@ public class Task1 {
         int a=0;
         int b=1;
         int fibonacci1=a+b;
+        if(n==0)
+            return 0;
+        if(n==1) return 1;
+        if(n>=2)
         while(b<n-2) {
 
             a=b;
