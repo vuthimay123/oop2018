@@ -15,7 +15,7 @@ public class Week3 {
         int minimun= array[0];
         for(int i=1;i<array.length;i++)
         {
-            if(array[i]>minimun)
+            if(array[i]<minimun)
                 minimun=array[i];
         }
         return minimun;
