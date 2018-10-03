@@ -5,16 +5,16 @@ package week4.task1;
  */
 public class Cam extends HoaQua {
     private String color;
-    public void setname(String a){
-        name=a;
+
+    public String getColor() {
+        return color;
     }
-    public String getname()
-    {
-        return name;
+
+    public void setColor(String color) {
+        this.color = color;
     }
-   public void setcolor(String color){
-       this.color=color;
-   }
+
+
 
 
 }

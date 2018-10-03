@@ -5,15 +5,23 @@ package week4.task1;
  */
 public class HoaQua {
     private String species;
-    protected String name;
-    public float price;
+    private String name;
+    protected float price;
     public float mass;
 
-    public String getName() {
-        return name;
+    public String getSpecies() {
+        return species;
     }
 
-    public float getprice() {
-        return price;
+    public void setSpecies(String species) {
+        this.species = species;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+
+
 }
