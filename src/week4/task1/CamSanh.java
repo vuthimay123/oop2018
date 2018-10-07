@@ -6,8 +6,7 @@ package week4.task1;
 //tao lop cam Sanh ke thua lop hoa qua
 
 public class CamSanh extends HoaQua{
-    public String quality;
-    boolean real(String id)
+    boolean test1(String id)
     {
             return id.substring(0,2).equals("CS");
     }
