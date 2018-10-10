@@ -1,6 +1,6 @@
 package week4.task2;
 
-public class Rectangle {
+public class Rectangle extends Shape{
     private double width=1.0;
     private double length=1.0;
     public Rectangle(){}
@@ -22,5 +22,15 @@ public class Rectangle {
     public void setLength(double length) {
         this.length = length;
     }
-    
+    public double getArea(){
+        return(getLength()*getWidth());
+    }
+    public double getPerimeter(){
+        return ((getLength()+getWidth())*2);
+    }
+    public String toString() {
+        String s;
+        s=super.toString()+','+"width:"+width+','+"length:"+length;
+        return s;
+    }
 }

@@ -21,8 +21,12 @@ public class Shape {
     public void setFill(boolean filled){
         this.filled=filled;
     }
-    public String toString(){
-        return color;
-    }
 
+    @Override
+    public String toString() {
+        return "Shape{" +
+                "color='" + color + '\'' +
+                ", filled=" + filled +
+                '}';
+    }
 }
