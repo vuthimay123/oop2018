@@ -8,6 +8,23 @@ public class Rectangle extends Shape{
         setX3(x3);
         setX4(x4);
     }
+    private double width,length;
+
+    public double getWidth() {
+        return width;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+    public double getLength() {
+        return length;
+    }
+
+    public void setLength(double length) {
+        this.length = length;
+    }
 
     public toado getX1() {
         return x1;
@@ -40,5 +57,8 @@ public class Rectangle extends Shape{
     public void setX4(toado x4) {
         this.x4 = x4;
     }
-    
+    public double getArea(double w,double l)
+    {
+        return l*w;
+    }
 }

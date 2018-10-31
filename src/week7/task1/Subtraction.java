@@ -1,16 +1,15 @@
 package week7.task1;
 
-//import org.graalvm.compiler.core.common.type.ArithmeticOpTable;
-
-public class Addition extends BinaryExpression{
+public class Subtraction extends BinaryExpression  {
     private Expression left;
-    private  Expression right;
-
-    public Addition(Expression left,Expression right)
+    private Expression right;
+    public Subtraction(Expression left, Expression right)
     {
         this.left=left;
         this.right=right;
     }
+
+
     @Override
     public Expression left() {
         return left;
@@ -23,15 +22,14 @@ public class Addition extends BinaryExpression{
 
     @Override
     public String toString() {
-        return "Addition{" +
+        return "Subtraction{" +
                 "left=" + left +
                 ", right=" + right +
                 '}';
     }
 
-
     @Override
     public int evaluate() {
-        return left.evaluate()+right.evaluate();
+        return left.evaluate()-right.evaluate();
     }
 }
