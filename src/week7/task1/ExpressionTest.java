@@ -18,7 +18,15 @@ public class ExpressionTest {
         // ket qua
         Expression result = new Square(ad);
         System.out.println(result.evaluate());
-       System.out.println(result.toString());
+        System.out.println(result.toString());
         //ngoai le  so 0 la mau
+        Numeral numeral1=new Numeral(9);
+        Numeral numeral2=new Numeral(0);
+        try {
+            Division di = new Division(numeral1,numeral2);
+            System.out.println(di.evaluate());
+        }catch (ArithmeticException e){
+            System.err.println("Loi chia cho 0!");
+        }
     }
 }
