@@ -2,7 +2,7 @@ package week11;
 
 public class Task1 {
 
-    public static <T extends Comparable> void sort ( T [] a  ){
+    public static<T extends Comparable> void sort ( T[] a  ){
         for(int i=0;i<a.length-1;i++ )
 
             for(int j=i+1;j<a.length;j++){
@@ -46,4 +46,8 @@ public class Task1 {
         for(int i=0;i<f.length;i++)
             System.out.println(f[i]);
     }
+
+
+
+
 }
